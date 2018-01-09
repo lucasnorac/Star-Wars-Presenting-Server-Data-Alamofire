@@ -12,6 +12,12 @@
 		209B283D1FF80DC2003D2BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209B283B1FF80DC2003D2BD6 /* Main.storyboard */; };
 		209B283F1FF80DC2003D2BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209B283E1FF80DC2003D2BD6 /* Assets.xcassets */; };
 		209B28421FF80DC2003D2BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209B28401FF80DC2003D2BD6 /* LaunchScreen.storyboard */; };
+		209B284A1FF815CF003D2BD6 /* NetworkingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B28491FF815CF003D2BD6 /* NetworkingServices.swift */; };
+		209B284C1FF82162003D2BD6 /* GetPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B284B1FF82162003D2BD6 /* GetPeopleResponse.swift */; };
+		209B284E1FF8226E003D2BD6 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B284D1FF8226E003D2BD6 /* NetworkingError.swift */; };
+		209B28501FF82327003D2BD6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B284F1FF82327003D2BD6 /* Person.swift */; };
+		209B28521FF84C6F003D2BD6 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B28511FF84C6F003D2BD6 /* DetailsVC.swift */; };
+		CA0F32463BCF85484FEF259E /* Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7114A851DD2FC9B30333CD49 /* Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		209B283E1FF80DC2003D2BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209B28411FF80DC2003D2BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209B28431FF80DC2003D2BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209B28491FF815CF003D2BD6 /* NetworkingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServices.swift; sourceTree = "<group>"; };
+		209B284B1FF82162003D2BD6 /* GetPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleResponse.swift; sourceTree = "<group>"; };
+		209B284D1FF8226E003D2BD6 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		209B284F1FF82327003D2BD6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		209B28511FF84C6F003D2BD6 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		3E5BAAF2DE8A62D3911DBADF /* Pods-Star Wars Presenting Server Data Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star Wars Presenting Server Data Alamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Star Wars Presenting Server Data Alamofire/Pods-Star Wars Presenting Server Data Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		7114A851DD2FC9B30333CD49 /* Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72E20E0130DD25F6E40DD2A5 /* Pods-Star Wars Presenting Server Data Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star Wars Presenting Server Data Alamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Star Wars Presenting Server Data Alamofire/Pods-Star Wars Presenting Server Data Alamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0F32463BCF85484FEF259E /* Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				209B28361FF80DC2003D2BD6 /* Star Wars Presenting Server Data Alamofire */,
 				209B28351FF80DC2003D2BD6 /* Products */,
+				AB26B2F69176CF58C0910240 /* Pods */,
+				7D154150B17B813AB1ECB2B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,34 @@
 			children = (
 				209B28371FF80DC2003D2BD6 /* AppDelegate.swift */,
 				209B28391FF80DC2003D2BD6 /* ViewController.swift */,
+				209B28511FF84C6F003D2BD6 /* DetailsVC.swift */,
+				209B28491FF815CF003D2BD6 /* NetworkingServices.swift */,
+				209B284B1FF82162003D2BD6 /* GetPeopleResponse.swift */,
+				209B284F1FF82327003D2BD6 /* Person.swift */,
+				209B284D1FF8226E003D2BD6 /* NetworkingError.swift */,
 				209B283B1FF80DC2003D2BD6 /* Main.storyboard */,
 				209B283E1FF80DC2003D2BD6 /* Assets.xcassets */,
 				209B28401FF80DC2003D2BD6 /* LaunchScreen.storyboard */,
 				209B28431FF80DC2003D2BD6 /* Info.plist */,
 			);
 			path = "Star Wars Presenting Server Data Alamofire";
+			sourceTree = "<group>";
+		};
+		7D154150B17B813AB1ECB2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7114A851DD2FC9B30333CD49 /* Pods_Star_Wars_Presenting_Server_Data_Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB26B2F69176CF58C0910240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E5BAAF2DE8A62D3911DBADF /* Pods-Star Wars Presenting Server Data Alamofire.debug.xcconfig */,
+				72E20E0130DD25F6E40DD2A5 /* Pods-Star Wars Presenting Server Data Alamofire.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 209B28461FF80DC2003D2BD6 /* Build configuration list for PBXNativeTarget "Star Wars Presenting Server Data Alamofire" */;
 			buildPhases = (
+				45034C429E339856FDA5B287 /* [CP] Check Pods Manifest.lock */,
 				209B28301FF80DC2003D2BD6 /* Sources */,
 				209B28311FF80DC2003D2BD6 /* Frameworks */,
 				209B28321FF80DC2003D2BD6 /* Resources */,
+				94176BCA2A8FCDB8FE98DC59 /* [CP] Embed Pods Frameworks */,
+				ECADFF60F220BBE8F549C8B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +173,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45034C429E339856FDA5B287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Star Wars Presenting Server Data Alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94176BCA2A8FCDB8FE98DC59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Star Wars Presenting Server Data Alamofire/Pods-Star Wars Presenting Server Data Alamofire-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Star Wars Presenting Server Data Alamofire/Pods-Star Wars Presenting Server Data Alamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECADFF60F220BBE8F549C8B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Star Wars Presenting Server Data Alamofire/Pods-Star Wars Presenting Server Data Alamofire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		209B28301FF80DC2003D2BD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209B28501FF82327003D2BD6 /* Person.swift in Sources */,
 				209B283A1FF80DC2003D2BD6 /* ViewController.swift in Sources */,
+				209B284E1FF8226E003D2BD6 /* NetworkingError.swift in Sources */,
 				209B28381FF80DC2003D2BD6 /* AppDelegate.swift in Sources */,
+				209B28521FF84C6F003D2BD6 /* DetailsVC.swift in Sources */,
+				209B284C1FF82162003D2BD6 /* GetPeopleResponse.swift in Sources */,
+				209B284A1FF815CF003D2BD6 /* NetworkingServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +373,7 @@
 		};
 		209B28471FF80DC2003D2BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5BAAF2DE8A62D3911DBADF /* Pods-Star Wars Presenting Server Data Alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +389,7 @@
 		};
 		209B28481FF80DC2003D2BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E20E0130DD25F6E40DD2A5 /* Pods-Star Wars Presenting Server Data Alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
